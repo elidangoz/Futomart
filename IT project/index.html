@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student shopping mart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+    <nav>
+        <div class="green-header">
+            <h5>Campus deals are live — save on your everyday essentials ✦</h5>
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <div class="c">
+                    <h3>F</h3>
+                </div>
+                <div class="txt">
+                    <h3>FUTO<span>mart</span></h3>
+                    <p>Your campus. Your market.</p>
+                </div>
+            </div>
+            <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+            <div class="nav-button">
+                <ul>
+                    <li><a href="#home" class="nav-btn">Home</a></li>
+                    <li><a href="#products" class="nav-btn">Shop</a></li>
+                    <li><a href="#shop" class="nav-btn">Categories</a></li>
+                    <li><a href="#student-deals" class="nav-btn">Student deals</a></li>
+                </ul>
+            </div>
+            <div class="nav-fonts">
+                <button type="button" onclick="document.getElementById('search').focus()">⌕</button>
+               <button class="login-btn">♙</button>
+               <button class="col" type="button"> ♧ Cart <span id="cart-count">0</span></button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="hero-section" id="home">
+            <div class="text">
+                <p class="p-1"> MADE FOR CAMPUS LIFE</p>
+                <div>
+                    <h1>Big campus energy. <span> Better everyday</span> essentials.</h1>
+                </div>
+                <p>From lecture-room must-haves to weekend fits, find your campus favourites without the stress.</p>
+                <div class="butns">
+                    <button class="button1"><a href="#products">Explore the shop ↗</a></button>
+                    <button class="button2"><a href="#shop">Browse categories →</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <div class="bg"> 
+                    <div class="banner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-sectionii">
+            <div>
+                <p><span>✦</span> Essentials for every day</p>
+                <p><span>↗</span> Easy-to-use shopping</p>
+                <p><span>♡</span> Curated for students</p>
+                <p><span>◉</span> Responsive on every screen</p>
+            </div>
+        </div>
+        <div class="hero-sectioniii" id="shop">
+            <div class="a">
+                <p>SHOP YOUR WAY</p>
+            </div>
+            <div class="b">
+                <h2>What are you <span>looking for?</span></h2>
+                <a href="#products">View all products ↗</a>
+            </div>
+            <div class="c">
+                <div class="i">
+                     <p>01/LECTURES</p>
+                    <div>
+                        <h3>Study Supplies</h3>
+                        <button><a href="# ">↗</a></button>
+                    </div>
+                </div>
+                <div class="ii">
+                    <p>02/EVERYDAY</p>
+                    <div>
+                        <h3>Daily living</h3>
+                        <button><a href="# ">↗</a></button>
+                    </div>
+                </div>
+                <div class="iii">
+                    <p>03/GADGETS</p>
+                    <div>
+                        <h3>Tech Essentials</h3>
+                        <button><a href="# ">↗</a></button>
+                    </div>
+                </div>
+                <div class="iv">
+                    <p>04/STYLE</p>
+                    <div>
+                        <h3>Fits & Fashion</h3>
+                        <button><a href="# ">↗</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-sectioniv" id="products">
+           <div class="a">
+                 <div class="txt">
+                    <p>THE CAMPUS EDIT</p>
+                </div>
+                <div class="intro">
+                    <div class="h1">
+                        <h1>Good stuff.<span>Good prices.</span></h1>
+                        <p>A few favourites to make campus life that little bit easier.</p>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Search products..." id="search">
+                    </div>
+                </div>
+                <div class="buttons">
+                     <button class="category-btn active" data-category="all"><a href="#">All products</a></button>
+                     <button class="category-btn" data-category="tech"><a href="#">Tech</a></button>
+                     <button class="category-btn" data-category="fashion"><a href="#">Fashion</a></button>
+                     <button class="category-btn" data-category="study"><a href="#">Study</a></button>
+                     <button class="category-btn" data-category="lifestyle"><a href="#">Lifestyle</a></button>
+                </div>
+           </div>
+            <div class="b">
+                <div class="product-card" data-category="tech">
+                    <div class="img">
+                        <img src="./images/headsets.jpg" alt="" >
+                    </div>
+                    <div>
+                        <p class="p">TECH</p>
+                        <h4>Wireless headphone</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦24,500 <del>₦29,000</del></p>
+                           <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fashion">
+                    <div class="img">
+                        <img src="./images/hand bags.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">FASHION</p>
+                        <h4>Everday Campus Tote</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦8,500 <del>₦9,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="study">
+                    <div class="img">
+                        <img src="./images/notebooks.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">STUDY</p>
+                        <h4>Daily Study Planner</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦4,500 <del>₦5,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fashion">
+                    <div class="img">
+                        <img src="./images/sneakers.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">FASHION</p>
+                        <h4>Minimal Sneakers</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦18,500 <del>₦19,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="study">
+                    <div class="img">
+                        <img src="./images/pen.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">STUDY</p>
+                        <h4>Lecture Notebook Sets</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦3,200 <del>₦4,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tech">
+                    <div class="img">
+                        <img src="./images/mp.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">TECH</p>
+                        <h4>Portable Speaker</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦16,000 <del>₦19,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="lifestyle">
+                    <div class="img">
+                        <img src="./images/desk lamp.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">LIFESTYLE</p>
+                        <h4>Desk Lamp</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦12,000</p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="lifestyle">
+                    <div class="img">
+                        <img src="./images/reusable bottle.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="p">LIFESTYLE</p>
+                        <h4>Reusable Water Bottle</h4>
+                        <p class="p2"><span>★★★★★</span> 4.8 / 5</p>
+                        <div class="add">
+                            <p>₦6,500 <del>₦9,000</del></p>
+                            <button class="add-to-cart" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-sectionv" id="student-deals">
+            <div class="a">
+                <div class="flex">
+                    <h5>THE STUDENT ADVANTAGE</h5>
+                    <h1>Little budget. <span>Big possibilities.
+                    </span></h1>
+                    <p>Campus life comes with enough surprises. Shopping for your essentials shouldn't be one of them.</p>
+                    <button><a href="#products">Find your next favourite</a></button>
+                </div>
+                <div class="flexb">
+                    <div class="ring one"></div>
+                    <div class="ring two"></div>
+                    <div class="main-circle">
+                        <h4>CAMPUS FAVOURITES</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="b">
+                <div class="part-1">
+                    <p>THE CAMPUS DROP</p>
+                    <h1>Good finds, straight to you.</h1>
+                    <p class="p">Get updates on new arrivals and student-friendly deals.</p>
+                </div>
+                <div class="part-2">
+                    <form action="">
+                        <input type="email" placeholder="Your email address">
+                        <button><a href="">Keep me posted</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="a">
+            <div class="logo">
+                <div class="log">
+                    <div class="c">
+                        <h3>F</h3>
+                    </div>
+                    <div class="txt">
+                        <h3>FUTO<span>mart</span></h3>
+                        <p>Your campus. Your market.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text">
+                <p>Making campus shopping feel a little more like you.</p>
+            </div>
+            <div class="link">
+                <a href="#home">Back to top</a>
+            </div>
+        </div><hr>
+        <div class="b">
+            <p class="p">© 2026 FutoMart. Student project demo.</p>
+            <div class="nav-button">
+                <ul>
+                    <li><a href="#home" class="nav-btn">Home</a></li>
+                    <li><a href="#products" class="nav-btn">Shop</a></li>
+                    <li><a href="#shop" class="nav-btn">Categories</a></li>
+                    <li><a href="#student-deals" class="nav-btn">Student deals</a></li>
+                </ul>
+            </div>
+            <p class="p2">Designed for campus life ✦</p>
+        </div>
+    </footer>
+    <!-- Cart Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Shopping Cart Sidebar -->
+<div class="cart-sidebar" id="cart">
+
+    <!-- Cart Header -->
+    <div class="cart-header">
+        <div>
+            <p class="cart-label">YOUR BAG</p>
+            <h2>Shopping cart <span>(1)</span></h2>
+        </div>
+
+        <button class="close-cart">&times;</button>
+    </div>
+
+    <!-- Cart Product -->
+    <div class="cart-content">
+
+        <div class="cart-item">
+
+            <div class="cart-image">
+                <img src="images/speaker.jpg" alt="Portable Speaker">
+            </div>
+
+            <div class="cart-details">
+                <h4>Portable Speaker</h4>
+                <p class="cart-price">₦16,000</p>
+
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+
+                <button class="remove-item">Remove</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer">
+
+        <div class="subtotal">
+            <span>Subtotal</span>
+            <span>₦16,000</span>
+        </div>
+
+        <div class="delivery">
+            <span>Delivery</span>
+            <span>Calculated at checkout</span>
+        </div>
+
+        <div class="total">
+            <h3>Total</h3>
+            <h2>₦16,000</h2>
+        </div>
+
+        <button class="checkout-btn">
+            Continue to checkout
+            <span>→</span>
+        </button>
+
+        <p class="cart-note">
+            Send money to (9064192416 Opay)
+        </p>
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- Login Overlay -->
+
+
+
+
+<div class="login-overlay"></div>
+
+<!-- Login Sidebar -->
+<div class="login-sidebar">
+
+    <div class="login-header">
+        <h2>Login</h2>
+        <button class="close-login">&times;</button>
+    </div>
+
+    <p>Welcome back! Login to your account.</p>
+
+    <form id="login-form">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="login-submit">Login</button>
+
+    </form>
+
+    <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+
+</div>
+<!-- Signup Overlay -->
+<div class="signup-overlay"></div>
+
+<!-- Signup Sidebar -->
+<div class="signup-sidebar">
+
+    <div class="signup-header">
+        <h2>Create Account</h2>
+        <button class="close-signup">&times;</button>
+    </div>
+
+    <p>Join FUTOmart and start shopping!</p>
+
+    <form id="signup-form">
+
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name"
+               placeholder="Enter your full name" required>
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email"
+               placeholder="Enter your email" required>
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password"
+               placeholder="Create a password" required>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password"
+               placeholder="Confirm your password" required>
+
+        <button type="submit" class="signup-submit">
+            Create Account
+        </button>
+
+    </form>
+
+    <p>Already have an account?
+        <a href="#" class="back-to-login">Login</a>
+    </p>
+
+</div>
+</body> 
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    // =========================
+    // PRODUCT FILTERING
+    // =========================
+
+    const searchInput = document.getElementById("search");
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const products = document.querySelectorAll(".product-card");
+
+    let activeCategory = "all";
+
+    function filterProducts() {
+
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        products.forEach(function (product) {
+
+            const category = product.dataset.category.toLowerCase();
+            const name = product.querySelector("h4").textContent.toLowerCase();
+            const details = product.textContent.toLowerCase();
+
+            const matchesCategory =
+                activeCategory === "all" ||
+                category === activeCategory;
+
+            const matchesSearch =
+                name.includes(searchTerm) ||
+                category.includes(searchTerm) ||
+                details.includes(searchTerm);
+
+            product.style.display =
+                matchesCategory && matchesSearch ? "" : "none";
+
+        });
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+
+    categoryButtons.forEach(function (button) {
+
+        button.addEventListener("click", function (event) {
+
+            event.preventDefault();
+
+            activeCategory = button.dataset.category.toLowerCase();
+
+            categoryButtons.forEach(function (btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            filterProducts();
+
+        });
+    });
+
+
+    // =========================
+    // CART ELEMENTS
+    // =========================
+
+    const cartSidebar = document.querySelector(".cart-sidebar");
+    const cartOverlay = document.querySelector(".cart-overlay");
+    const cartIcon = document.querySelector(".col");
+    const closeCartBtn = document.querySelector(".close-cart");
+
+    const cartContent = document.querySelector(".cart-content");
+    const cartCount = document.getElementById("cart-count");
+
+    let cart = [];
+
+
+    // =========================
+    // OPEN AND CLOSE CART
+    // =========================
+
+    function openCart() {
+        cartSidebar.classList.add("active");
+        cartOverlay.classList.add("active");
+    }
+
+    function closeCart() {
+        cartSidebar.classList.remove("active");
+        cartOverlay.classList.remove("active");
+    }
+
+    cartIcon.addEventListener("click", openCart);
+
+    closeCartBtn.addEventListener("click", closeCart);
+
+    cartOverlay.addEventListener("click", closeCart);
+
+
+    // =========================
+    // ADD PRODUCTS TO CART
+    // =========================
+
+    const addButtons = document.querySelectorAll(".add-to-cart");
+
+    addButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const product = button.closest(".product-card");
+
+            const name = product.querySelector("h4").textContent.trim();
+
+            const image = product.querySelector("img").src;
+
+            const priceText = product.querySelector(".add p").textContent;
+
+            const price = Number(
+                priceText.match(/₦\s*([\d,]+)/)[1].replace(/,/g, "")
+            );
+
+            const existingProduct = cart.find(function (item) {
+                return item.name === name;
+            });
+
+            if (existingProduct) {
+
+                existingProduct.quantity++;
+
+            } else {
+
+                cart.push({
+                    name: name,
+                    price: price,
+                    image: image,
+                    quantity: 1
+                });
+
+            }
+
+            renderCart();
+
+            button.textContent = "✓";
+
+            setTimeout(function () {
+                button.textContent = "+";
+            }, 600);
+
+        });
+
+    });
+
+
+    // =========================
+    // DISPLAY CART PRODUCTS
+    // =========================
+
+    function renderCart() {
+
+        cartContent.innerHTML = "";
+
+        cart.forEach(function (item, index) {
+
+            const cartItem = document.createElement("div");
+
+            cartItem.className = "cart-item";
+
+            cartItem.innerHTML = `
+                <div class="cart-image">
+                    <img src="${item.image}" alt="${item.name}">
+                </div>
+
+                <div class="cart-details">
+
+                    <h4>${item.name}</h4>
+
+                    <p class="cart-price">
+                        ₦${item.price.toLocaleString()}
+                    </p>
+
+                    <div class="quantity">
+
+                        <button class="minus" data-index="${index}">-</button>
+
+                        <span>${item.quantity}</span>
+
+                        <button class="plus" data-index="${index}">+</button>
+
+                    </div>
+
+                    <button class="remove-item" data-index="${index}">
+                        Remove
+                    </button>
+
+                </div>
+            `;
+
+            cartContent.appendChild(cartItem);
+
+        });
+
+        updateCartTotal();
+
+    }
+
+
+    // =========================
+    // QUANTITY AND REMOVE
+    // =========================
+
+    cartContent.addEventListener("click", function (event) {
+
+        const index = event.target.dataset.index;
+
+        if (index === undefined) return;
+
+        if (event.target.classList.contains("plus")) {
+
+            cart[index].quantity++;
+
+        }
+
+        else if (event.target.classList.contains("minus")) {
+
+            cart[index].quantity--;
+
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+
+        }
+
+        else if (event.target.classList.contains("remove-item")) {
+
+            cart.splice(index, 1);
+
+        }
+
+        renderCart();
+
+    });
+
+
+    // =========================
+    // UPDATE TOTALS
+    // =========================
+
+    function updateCartTotal() {
+
+        const totalItems = cart.reduce(function (total, item) {
+            return total + item.quantity;
+        }, 0);
+
+        const totalPrice = cart.reduce(function (total, item) {
+            return total + item.price * item.quantity;
+        }, 0);
+
+        cartCount.textContent = totalItems;
+
+        document.querySelector(".cart-header h2 span").textContent =
+            `(${totalItems})`;
+
+        document.querySelector(".subtotal span:last-child").textContent =
+            "₦" + totalPrice.toLocaleString();
+
+        document.querySelector(".total h2").textContent =
+            "₦" + totalPrice.toLocaleString();
+
+    }
+
+
+    // =========================
+    // INITIALIZE
+    // =========================
+
+    filterProducts();
+
+    renderCart();
+
+    console.log("CampusMart loaded successfully!");
+
+});
+const loginSidebar = document.querySelector(".login-sidebar");
+const loginOverlay = document.querySelector(".login-overlay");
+const closeLogin = document.querySelector(".close-login");
+
+// Change this selector to match your Login button
+const loginButton = document.querySelector(".login-btn");
+
+function openLogin() {
+    loginSidebar.classList.add("active");
+    loginOverlay.classList.add("active");
+}
+
+function closeLoginSidebar() {
+    loginSidebar.classList.remove("active");
+    loginOverlay.classList.remove("active");
+}
+
+loginButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    openLogin();
+});
+
+closeLogin.addEventListener("click", closeLoginSidebar);
+loginOverlay.addEventListener("click", closeLoginSidebar);
+// SIGNUP SIDEBAR
+
+const signupLink = document.querySelector(".signup-link");
+const signupSidebar = document.querySelector(".signup-sidebar");
+const signupOverlay = document.querySelector(".signup-overlay");
+const closeSignupButton = document.querySelector(".close-signup");
+const backToLogin = document.querySelector(".back-to-login");
+
+function openSignup() {
+    loginSidebar.classList.remove("active");
+    loginOverlay.classList.remove("active");
+
+    signupSidebar.classList.add("active");
+    signupOverlay.classList.add("active");
+}
+
+function closeSignup() {
+    signupSidebar.classList.remove("active");
+    signupOverlay.classList.remove("active");
+}
+
+signupLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    openSignup();
+});
+
+closeSignupButton.addEventListener("click", closeSignup);
+signupOverlay.addEventListener("click", closeSignup);
+
+backToLogin.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    closeSignup();
+
+    loginSidebar.classList.add("active");
+    loginOverlay.classList.add("active");
+});
+
+// Signup form demo
+document.querySelector("#signup-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const password = document.querySelector("#signup-password").value;
+    const confirmPassword = document.querySelector("#confirm-password").value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    alert("Account created successfully!");
+});
+// HAMBURGER MENU
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.querySelector("nav .nav-button");
+
+hamburger.addEventListener("click", function () {
+
+    navMenu.classList.toggle("active");
+
+    const isOpen = navMenu.classList.contains("active");
+
+    hamburger.setAttribute("aria-expanded", isOpen);
+
+    hamburger.setAttribute(
+        "aria-label",
+        isOpen ? "Close menu" : "Open menu"
+    );
+
+});
+
+// CLOSE MENU WHEN A LINK IS CLICKED
+
+const navLinks = navMenu.querySelectorAll("a");
+
+navLinks.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navMenu.classList.remove("active");
+
+        hamburger.setAttribute("aria-expanded", "false");
+        hamburger.setAttribute("aria-label", "Open menu");
+
+    });
+
+});
+</script>
+</html>
